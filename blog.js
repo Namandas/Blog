@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 
 const app = express();
 const port = 4000;
-let uri = 'mongodb+srv://naman:naman918@cluster0.ykxusfx.mongodb.net/?retryWrites=true&w=majority';
+let uri = 'mongodb+srv://DB_username:DB_password@cluster0.ykxusfx.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const { Schema } = mongoose;
 
