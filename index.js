@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 import session from 'express-session';
 import mongoose from 'mongoose';
 dotenv.config({ silent: process.env.NODE_ENV === 'production' });
-const API_URL = "http://localhost:4000";
+const API_URL = "https://super-erin-clothes.cyclic.app";
 const app = express();
 const PORT = 3000;
 const SECRET_KEY = process.env.SECRET_TOKEN_KEY; 
