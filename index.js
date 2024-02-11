@@ -10,7 +10,7 @@ import mongoose from 'mongoose';
 dotenv.config({ silent: process.env.NODE_ENV === 'production' });
 const API_URL = "https://super-erin-clothes.cyclic.app";
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const SECRET_KEY = process.env.SECRET_TOKEN_KEY; 
 
 let uri = 'mongodb+srv://DB_username:DB_password@cluster0.ykxusfx.mongodb.net/?retryWrites=true&w=majority';
