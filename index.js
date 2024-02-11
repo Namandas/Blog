@@ -13,7 +13,7 @@ const app = express();
 const PORT = 3000;
 const SECRET_KEY = process.env.SECRET_TOKEN_KEY; 
 
-let uri = 'mongodb+srv://naman:naman918@cluster0.ykxusfx.mongodb.net/?retryWrites=true&w=majority';
+let uri = 'mongodb+srv://DB_username:DB_password@cluster0.ykxusfx.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const { Schema } = mongoose;
 
